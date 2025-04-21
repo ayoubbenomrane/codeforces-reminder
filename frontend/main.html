@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-container" class="flex   ">
+                <!-- <a href=""><img id="logo" src="/frontend/logo.webp" alt=""></a> -->
+                <span class="violet"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m15 19-7-7 7-7" />
+                    </svg><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m9 5 7 7-7 7" />
+                    </svg>
+
+                </span>
+
+                <h1>CF Reminder</h1>
+            </div>
+            <button>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m10.827 5.465-.435-2.324m.435 2.324a5.338 5.338 0 0 1 6.033 4.333l.331 1.769c.44 2.345 2.383 2.588 2.6 3.761.11.586.22 1.171-.31 1.271l-12.7 2.377c-.529.099-.639-.488-.749-1.074C5.813 16.73 7.538 15.8 7.1 13.455c-.219-1.169.218 1.162-.33-1.769a5.338 5.338 0 0 1 4.058-6.221Zm-7.046 4.41c.143-1.877.822-3.461 2.086-4.856m2.646 13.633a3.472 3.472 0 0 0 6.728-.777l.09-.5-6.818 1.277Z" />
+                </svg>
+
+
+                Subscribe
+            </button>
+        </nav>
+    </header>
+    <main class="flex">
+        <div class="flex">
+            <h1>Never Miss a <span class="violet">Codeforces</span> Contest </h1>
+            <p>Get timely reminders for upcoming contests. Stay competitive, improve your rating, and never worry about
+                missing a competition again.</p>
+            <button class="open-modal">Get started</button>
+        </div>
+
+    </main>
+
+    <dialog id="pop-up" class=" modal pop-up">
+        <div class="pop-p ">
+            <h2 class="pop-up-title">Subscribe to contest reminders</h2>
+            <form action="" class="grid">
+                <label for="email" class="email-title">Email Adress:</label>
+                <input type="email" name="email" id="email" class="email-input">
+
+                <label for="contest-types" class="contest-types">Contest Types:</label>
+
+                <label class="div1"><input type="checkbox" name="contest-types" value="div 1"> Division 1</label>
+                <label class="div2"><input type="checkbox" name="contest-types" value="div 2"> Division 2</label>
+                <label class="div3"><input type="checkbox" name="contest-types" value="div 3"> Division 3</label>
+                <label class="div4"><input type="checkbox" name="contest-types" value="div 3"> Division 4</label>
+
+            </form>
+            <button class="close-button">Submit</button>
+
+        </div>
+
+    </dialog>
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

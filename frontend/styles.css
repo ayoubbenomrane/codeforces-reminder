@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+button{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    background-color: #4f46e5;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: white;
+    border-style: none;
+    padding:0.75rem;
+
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+body{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    text-align: center;
+    justify-content: space-between;
+    
+
+}
+main{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding:3em 1em 3em 1em;
+    background-color: #eff4ff;
+}
+.pop-up{
+    padding:3em 5em 3em 5em;
+    /* width: auto;
+    height: auto; */
+    max-width: 50vw;
+    border-color: #7f8287;
+    border-radius: 0.2rem;
+    border-width: 1px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    /* row-gap:0.5em; */
+    /* width: 90%;
+    height: 60%; */
+
+}
+
+.email-title{
+
+    grid-column: 1/2;
+    grid-row:1;
+    justify-self: start;
+    font-weight: 600;
+    color: #4c5463;
+}
+.email-input{
+    grid-column: 1/3;
+    grid-row: 2;
+    /* margin-bottom: 2em; */
+}
+.contest-types{
+    /* margin-top: 1em; */
+    grid-column: 1/3;
+    grid-row: 4;
+    justify-self: start;
+    font-weight: 600;
+    color: #4c5463;
+}
+.div1{
+    grid-column: 1/2;
+    grid-row: 5;
+}
+.div2{
+    grid-column: 2/3;
+    grid-row: 5;
+}
+.div3{
+    grid-column: 1/2;
+    grid-row: 6;
+}
+.div4{
+    grid-column: 2/3;
+    grid-row: 6;
+}
+.close-button{
+    margin:1em 0 1em 0;
+    justify-self: center;
+}
+.violet{
+    color:#4f46e5;
+}
+
+
+h1{
+    /* font-size: 1em; */
+    text-align: center;
+    margin-top: 20px;
+}
+#logo-container{
+    flex-direction: row;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0em 1em 0 1em;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
